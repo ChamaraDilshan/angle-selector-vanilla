@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle Selector</title>
+</head>
+<body>
+    <div>
+        <label for="angleInput">Angle: </label>
+        <input type="number" id="angleInput" value="0" min="0" max="360">
+    </div>
+    <div>
+        <input type="range" id="angleSlider" min="0" max="360" value="180">
+    </div>
+    <div>
+        <label><input type="radio" name="angle" value="0"> 0°</label>
+        <label><input type="radio" name="angle" value="45"> 45°</label>
+        <label><input type="radio" name="angle" value="60"> 60°</label>
+        <label><input type="radio" name="angle" value="90"> 90°</label>
+        <label><input type="radio" name="angle" value="180"> 180°</label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
