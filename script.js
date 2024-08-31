@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update all elements when the input value changes
     function updateAngle(value) {
-        const angle = Math.max(0, Math.min(360, value));  // Clamp value between 0 and 360
+        const angle = value % 360;  // Clamp value between 0 and 360
         angleInput.value = angle;
         angleSlider.value = angle;
 
